@@ -1,33 +1,5 @@
 ﻿<template>
-    <div style="margin:5px">
-        <b-form @reset="onReset">
-
-            <b-form-group id="input-group-1"
-                          :label=label1
-                          label-for="input-1">
-                <b-form-textarea id="textarea-no-auto-shrink"
-                                 rows="3"
-                                 v-model:value="message1"
-                                 max-rows="8"
-                                 no-auto-shrink></b-form-textarea>
-            </b-form-group>
-
-            <b-button style="margin-bottom:5px" variant="primary" v-on:click="onSubmit">Convert</b-button>
-
-            <b-form-group id="input-group-1"
-                          :label=label2
-                          label-for="input-1">
-                <b-form-textarea id="textarea-no-auto-shrink"
-                                 rows="3"
-                                 v-model:value="message2"
-                                 max-rows="8"
-                                 no-auto-shrink></b-form-textarea>
-            </b-form-group>
-
-
-            <b-button type="reset" variant="danger">Reset</b-button>
-        </b-form>
-    </div>
+    <com_form title="Text To Morse" label1="Text" label2="Morse" :message2=message2 @onSubmit="onSubmit"></com_form>
 </template>
 
 <script>
@@ -95,22 +67,18 @@
 
     export default {
         name: 'text2morse',
-        props: {
-            title: String,
-            label1: String,
-            label2: String,
-            message1: '',
-            message2: ''
+        data() {
+            return {
+                message1:'',
+                message2: ''
+            }
         },
+       
         methods: {
-            onSubmit() {
-                var temp = this.message1;
+            onSubmit(msj1) {
+                var temp = msj1;
                 temp = textToMorse(temp.toLowerCase());
                 this.message2 = temp;
-            },
-            onReset() {
-                this.message1 = ''
-                this.message2 = ''
             }
         }
     }

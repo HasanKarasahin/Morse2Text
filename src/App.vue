@@ -7,11 +7,11 @@
         </b-alert>
 
         <div v-if="state">
-            <text2morse title="text2morse" label1="Text" label2="Morse" />
+            <text2morse/>
         </div>
 
         <div v-else>
-            <morse2text title="morse2text" label1="Morse" label2="Text" />
+            <morse2text/>
         </div>
 
     </div>
