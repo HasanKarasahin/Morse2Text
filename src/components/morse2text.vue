@@ -59,12 +59,17 @@
             morseToText(morse_text){
                 var messageConverted = [];
 
-                morse_text.split("/").map(function (word) {
+                var list = morse_text.split("/");
+
+
+                list.map(function (word) {
                     word.split(" ").map(function (letter) {
                         messageConverted.push(alphabet_morse[letter]);
                     });
-                    messageConverted.push(" ");
+                        messageConverted.push(" ");
+                   
                 });
+
 
                 return messageConverted.join("");
             },
