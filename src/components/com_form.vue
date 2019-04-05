@@ -37,7 +37,7 @@
             title: String,
             label1: String,
             label2: String,
-            message1: '',
+            message1: String,
             message2: String
         },
         methods: {

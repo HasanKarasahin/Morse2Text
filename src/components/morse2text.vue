@@ -1,5 +1,5 @@
 ﻿<template>
-    <com_form title="Morse To Text" label1="Morse" label2="Text" :message2=message2 @onSubmit="onSubmit"></com_form>
+    <com_form title="Morse To Text" label1="Morse" label2="Text" :message1=message1 :message2=message2 @onSubmit="onSubmit"></com_form>
 </template>
 
 <script>
@@ -47,19 +47,6 @@
         "--··--": ","
     };
 
-    function morseToText(morse_text) {
-        var messageConverted = [];
-
-        morse_text.split("/").map(function (word) {
-            word.split(" ").map(function (letter) {
-                messageConverted.push(alphabet_morse[letter]);
-            });
-            messageConverted.push(" ");
-        });
-
-        return messageConverted.join("");
-    }
-
     export default {
         name: 'morse2text',
         data() {
@@ -69,8 +56,21 @@
             }
         },
         methods: {
+            morseToText(morse_text){
+                var messageConverted = [];
+
+                morse_text.split("/").map(function (word) {
+                    word.split(" ").map(function (letter) {
+                        messageConverted.push(alphabet_morse[letter]);
+                    });
+                    messageConverted.push(" ");
+                });
+
+                return messageConverted.join("");
+            },
             onSubmit(msj1) {
-                var temp = morseToText(msj1);
+                this.message1 = msj1;
+                var temp = this.morseToText(msj1);
                 this.message2 = temp;
             }
         }

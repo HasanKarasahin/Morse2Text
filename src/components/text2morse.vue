@@ -1,5 +1,5 @@
 ﻿<template>
-    <com_form title="Text To Morse" label1="Text" label2="Morse" :message2=message2 @onSubmit="onSubmit"></com_form>
+    <com_form title="Text To Morse" label1="Text" label2="Morse" :message1=message1 :message2=message2 @onSubmit="onSubmit"></com_form>
 </template>
 
 <script>
@@ -47,24 +47,6 @@
         ",": "--··--"
     };
 
-    function textToMorse(latin_text) {
-        var messageConverted = [];
-        latin_text = latin_text.split(" ");
-        var sayac = 0;
-        latin_text.map(function (word) {
-            sayac++;
-            var i;
-            for (i = 0; i < word.length; i++) {
-                messageConverted.push(alphabet_latin[word[i]]);
-            }
-
-            if (sayac < latin_text.length)
-                messageConverted.push("/");
-        });
-
-        return messageConverted.join(" ");
-    }
-
     export default {
         name: 'text2morse',
         data() {
@@ -75,9 +57,28 @@
         },
        
         methods: {
+            textToMorse(latin_text) {
+                console.log();
+                var messageConverted = [];
+                latin_text = latin_text.split(" ");
+                var sayac = 0;
+                latin_text.map(function (word) {
+                    sayac++;
+                    var i;
+                    for (i = 0; i < word.length; i++) {
+                        messageConverted.push(alphabet_latin[word[i]]);
+                    }
+
+                    if (sayac < latin_text.length)
+                        messageConverted.push("/");
+                });
+
+                return messageConverted.join(" ");
+            },
             onSubmit(msj1) {
+                this.message1 = msj1;
                 var temp = msj1;
-                temp = textToMorse(temp.toLowerCase());
+                temp = this.textToMorse(temp.toLowerCase());
                 this.message2 = temp;
             }
         }
