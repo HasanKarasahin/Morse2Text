@@ -1,9 +1,9 @@
 <template>
-    <div id="app">
+    <div id="app" >
 
         <b-alert variant="success" show>
-            <b-button type="submit" style="margin-left:5px" :variant="[state?'primary':'danger']" v-on:click="morse2textclick">Morse To Text</b-button>
-            <b-button type="submit" style="margin-left:5px" :variant="[!state?'primary':'danger']" v-on:click="text2morseclick">Text To Mors</b-button>
+            <b-button type="submit" style="margin-left:5px" :variant="[state?'info':'success']" v-on:click="morse2textclick">Morse To Text</b-button>
+            <b-button type="submit" style="margin-left:5px" :variant="[!state?'info':'success']" v-on:click="text2morseclick">Text To Mors</b-button>
         </b-alert>
 
         <div v-if="state">
@@ -29,7 +29,7 @@
             morse2text,
         },
         props: {
-            state: ''
+            state: false
         },
         methods: {
             morse2textclick: function () {
@@ -45,4 +45,14 @@
 </script>
 
 <style>
+
+
+    #app {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:10px
+    }
+
+
 </style>

@@ -108,7 +108,7 @@
                 temp = textToMorse(temp.toLowerCase());
                 this.message2 = temp;
             },
-            onReset(evt) {
+            onReset() {
                 this.message1 = ''
                 this.message2 = ''
             }

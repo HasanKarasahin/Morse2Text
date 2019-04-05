@@ -18,7 +18,6 @@
                           :label=label2
                           label-for="input-1">
                 <b-form-textarea id="textarea-no-auto-shrink"
-                                 :placeholder=plcholder2
                                  rows="3"
                                  v-model:value="message2"
                                  max-rows="8"
@@ -102,7 +101,7 @@
                 var temp = morseToText(this.message1);
                 this.message2 = temp;
             },
-            onReset(evt) {
+            onReset() {
                 this.message1 = ''
                 this.message2 = ''
             }
