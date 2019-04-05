@@ -19,15 +19,29 @@
 
 <script>
 
-    <script>
-        import Home from './components/Home.vue';
+    import text2morse from './components/text2morse.vue';
+    import morse2text from './components/morse2text.vue';
 
     export default {
-            name: 'app',
+        name: 'app',
         components: {
-            Home
-        }
-        };
+            text2morse,
+            morse2text,
+        },
+        props: {
+            state: ''
+        },
+        methods: {
+            morse2textclick: function () {
+                this.state = false
+            },
+            text2morseclick: function () {
+                this.state = true,
+                    this.changeColor = !this.changeColor;
+            }
+        },
+
+    };
 </script>
 
 <style>
