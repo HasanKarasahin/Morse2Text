@@ -35,6 +35,9 @@
     <Content Include="src\App.vue" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\components\com_form.vue">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\components\morse2text.vue">
       <SubType>Code</SubType>
     </Content>
