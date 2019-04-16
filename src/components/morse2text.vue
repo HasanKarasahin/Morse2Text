@@ -66,7 +66,6 @@
                         messageConverted.push(alphabet_morse[letter]);
                     });
                         messageConverted.push(" ");
-                   
                 });
 
                 return messageConverted.join("");
