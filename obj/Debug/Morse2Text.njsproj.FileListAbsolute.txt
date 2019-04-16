@@ -1,0 +1,3 @@
+C:\Users\hasan\Desktop\Proje\Morse2Text\Morse2Text\obj\Debug\Morse2Text.njsprojAssemblyReference.cache
+C:\Users\hasan\Desktop\Proje\Morse2Text\Morse2Text\obj\Debug\Morse2Text.njsproj.CoreCompileInputs.cache
+C:\Users\hasan\Desktop\Proje\Morse2Text\Morse2Text\bin\Microsoft.NodejsTools.WebRole.dll

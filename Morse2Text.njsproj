@@ -44,6 +44,9 @@
     <Content Include="src\components\text2morse.vue">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="src\components\usermodal.vue">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dist\" />

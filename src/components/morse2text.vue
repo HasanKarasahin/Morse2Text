@@ -61,7 +61,6 @@
 
                 var list = morse_text.split("/");
 
-
                 list.map(function (word) {
                     word.split(" ").map(function (letter) {
                         messageConverted.push(alphabet_morse[letter]);
@@ -69,7 +68,6 @@
                         messageConverted.push(" ");
                    
                 });
-
 
                 return messageConverted.join("");
             },

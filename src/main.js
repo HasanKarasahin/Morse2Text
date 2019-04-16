@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import com_form from './components/com_form.vue'
 
+import VueSocketIO from 'vue-socket.io'
+
 Vue.component('com_form', com_form)
 
 Vue.use(BootstrapVue)
