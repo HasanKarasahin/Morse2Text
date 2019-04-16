@@ -53,6 +53,7 @@ Clienti başlatmak için
 
 ```sh
 $ cd Morse2Text
+$ npm install -d
 $ npm run serve
 ```
 
