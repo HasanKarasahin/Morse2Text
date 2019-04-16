@@ -52,8 +52,6 @@
         },
         methods: {
             sendMessage() {
-                alert(this.name)
-
                 this.socket.emit('SEND_MESSAGE', {
                     user: this.name
                 });
@@ -68,7 +66,7 @@
                 // Prevent modal from closing
                 bvModalEvt.preventDefault()
                 if (!this.name) {
-                    alert('Please enter your name')
+                    alert('Lütfen adýnýzý giriniz')
                 } else {
                     this.handleSubmit()
                 }
