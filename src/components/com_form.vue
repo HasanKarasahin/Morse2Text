@@ -12,7 +12,7 @@
                                  no-auto-shrink></b-form-textarea>
             </b-form-group>
 
-            <b-button style="margin-bottom:5px" variant="primary" v-on:click="onSubmit">Convert</b-button>
+            <b-button style="margin-bottom:5px" variant="primary" v-on:click="onSubmit">Çevir</b-button>
 
             <b-form-group id="input-group-1"
                           :label=label2
@@ -24,7 +24,7 @@
                                  no-auto-shrink></b-form-textarea>
             </b-form-group>
 
-            <b-button type="reset" variant="danger">Reset</b-button>
+            <b-button type="reset" variant="danger">Sıfırla</b-button>
         </b-form>
     </div>
 </template>
