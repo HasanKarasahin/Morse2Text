@@ -32,7 +32,7 @@ Mors to Text 'in çalışması için [Node.js](https://nodejs.org/)  gerekli.
 Bağımlılıkları ve devDependencies'i kurun ve sunucuyu başlatın.
 
 ```sh
-$ cd Morse2Text
+$ cd Morse2Text/server
 $ npm install -d
 $ node app.js
 ```
