@@ -19,7 +19,7 @@ Mors To Text , metinleri Mors alfabesine ve Mors alfabesini de metinlere çevire
 * [NodeJS](https://nodejs.org) - Açık kaynaklı, sunucu tarafında çalışan ve ağ bağlantılı uygulamalar için geliştirilmiş bir çalıştırma ortamıdır. Node.js uygulamaları genelde istemci tarafı betik dili olan JavaScript kullanılarak geliştirilir.
 
 * [VueJS](https://vuejs.org) - Kullanıcı arayüzleri ve tek sayfa uygulamalar inşa etmek için kullanılan açık kaynak Javascript iskeleti.
-* [Socket.io](https://socket.io/) - Socket.IO, gerçek zamanlı, çift yönlü ve olaya dayalı iletişimi sağlar.
+* [Socket.io](https://socket.io/) - Gerçek zamanlı, çift yönlü ve olaya dayalı iletişimi sağlar.
 * [Express](https://expressjs.com) - Node.js tabanlı web uygulama sunucu çatısı. Express.js, tek sayfa, çoklu sayfa ve hibrit web uygulamaları geliştirmeye yönelik tasarlanmıştır. 
 * [Bootstrap + Vue](https://bootstrap-vue.js.org) - Kapsamlı ve otomatik WAI-ARIA erişilebilirlik işaretlemesi ile tamamlanan Vue.js 2.5+ için mevcut olan en kapsamlı Bootstrap V4 bileşenleri ve ızgara sistemi uygulamalarından birini sunar
 
