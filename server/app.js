@@ -10,39 +10,28 @@ const server = app.listen(3001, function() {
 const io = require('socket.io')(server);
 
 io.on('connection', function(socket) {
-	 var date = new Date();
-	
 	
 	 var user=socket.id;
 	
 	socket.on('disconnect', function(){
+		
+	var date = new Date();
 	
-	var str=' \r\n\t '+date+' --> '+user+' Ayrıldı \r\n\t';
+	var str=' \r\n'+date+' --> '+user+' Ayrıldı';
 	
 	fs.appendFile('log.txt', str, (err) => {  
 			// throws an error, you could also catch it here
 			if (err) throw err;
-
-			// success case, the file was saved
-			console.log('Lyric saved!');
-		}); 
-	
+		});
 	});
   
 	socket.on('SEND_MESSAGE', function(data){
-		
          user=data.user
-		 var str='\r\n\t'+date+' --> '+user+' Katıldı \r\n\t';
-		 
+		 var date = new Date();
+		 var str='\r\n'+date+' --> '+user+' Katıldı';	 
 		 fs.appendFile('log.txt', str, (err) => {  
-			// throws an error, you could also catch it here
 			if (err) throw err;
-
-			// success case, the file was saved
-			console.log('Lyric saved!');
+			console.log('kaydedildi.');
 		});
-		 
-		
 	});
-  
 });
