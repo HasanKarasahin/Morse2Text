@@ -58,7 +58,6 @@
        
         methods: {
             textToMorse(latin_text) {
-                console.log();
                 var messageConverted = [];
                 latin_text = latin_text.split(" ");
                 var sayac = 0;
