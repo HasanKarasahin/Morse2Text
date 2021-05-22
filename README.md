@@ -43,7 +43,7 @@ server running on port 3001
 ```
 
 
-Tercik edilen tarayıcıda sunucu adresine giderek sunucunun çalıştıgını dogruyabilirsiniz.
+Tercih edilen tarayıcıda sunucu adresine giderek sunucunun çalıştığını doğruyabilirsiniz.
 
 ```sh
 http://127.0.0.1:3001/
